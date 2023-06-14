@@ -31,7 +31,8 @@ abstract class VmState<D extends VMData, VM extends ViewModel<D>,
 
   @override
   void didChangeDependencies() {
-    _vm.onDidChangeDependencies(vmData)
+    super.didChangeDependencies();
+    _vm.onDidChangeDependencies(vmData);
   }
 
   @override
